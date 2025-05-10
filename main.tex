@@ -1,0 +1,193 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+\usepackage{microtype}
+% \usepackage[pdftex,
+%             pdfauthor={Michał Czyż},
+%             pdftitle={Michał Czyż - Curriculum Vitae},
+%             pdfsubject={},
+%             pdfkeywords={CV},
+%             pdfproducer={Latex with hyperref},
+%             pdfcreator={xelatex},
+%             colorlinks=true,
+%             allcolors=blue]{hyperref}
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Michał}{Czyż}
+\title{Programista}                               % optional, remove / comment the line if not wanted
+\address{Łaziska Górne}{Polska}{}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+48~693~101~370}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+% \phone[fixed]{+2~(345)~678~901}
+% \phone[fax]{+3~(456)~789~012}
+\email{mike@c2yz.com}                               % optional, remove / comment the line if not wanted
+\homepage{c2yz.com}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{mike-czyz}                        % optional, remove / comment the line if not wanted
+% \social[xing]{john\_doe}                           % optional, remove / comment the line if not wanted
+% \social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
+\social[github]{eRgo35}                              % optional, remove / comment the line if not wanted
+% \social[gitlab]{jdoe}                              % optional, remove / comment the line if not wanted
+% \social[skype]{jdoe}                               % optional, remove / comment the line if not wanted
+% \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+% \photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+% \renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
+%   to redefine the bibliography heading string ("Publications")
+% \renewcommand{\refname}{Articles}
+
+\renewcommand{\subsectionrule}{}
+
+% bibliography with mutiple entries
+\usepackage{multibib}
+% \newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+Jestem studentem trzeciego roku studiów inżynierskich na kierunku Informatyka na Politechnice Śląskiej w Gliwicach. Programowanie jest moją pasją. Programuję w wielu językach programowania, ale ostatnio koncentruję swoją uwagę na językach Rust oraz JavaScript. Interesuje się także sztuczną inteligencją oraz uczeniem maszynowym. Aktywnie tworzę i rozwijam wiele projektów.
+
+\section{Umiejętności}
+
+\subsection{Umiejętności zawodowe}
+
+\cvlistitem{Tworzenie serwisów internetowych -- regularnie wykorzystuję technologie tj. React, NextJS, NodeJS oraz frameworki CSS.}
+\cvlistitem{Budowa oprogramowania użytkowego -- tworzę aplikacje w językach Rust, C\texttt{++}, C\# oraz Python.}
+\cvlistitem{Administracja Systemami -- potrafię zarządzać systemami operacyjnymi oraz usługami na nich uruchomionymi tj. Windows Server i Active Directory, Linux, Nginx, Traefik oraz Docker.}
+\cvlistitem{Zarządzanie bazami danych -- znam język SQL oraz potrafię projektować schematy baz danych.}
+\cvlistitem{Uczenie Maszynowe -- potrafię szkolić własne modele z wykorzystaniem bibliotek TensorFlow, PyTorch oraz NLTK.}
+
+\subsection{Kompetencje miękkie}
+
+\cvlistitem{Praca w grupie oraz kierowanie zespołem.}
+\cvlistitem{Samodzielność i dobra organizacja czasu pracy.}
+\cvlistitem{Umiejętność prezentacji oraz prowadzenia wydarzeń.}
+\cvlistitem{Bardzo dobra znajomość języka angielskiego (na poziomie C1).}
+
+\section{Projekty}
+
+\cvlistitem{System zdalnego nadzoru poczwórnego bioreaktora -- współtworzyłem program w języku Rust umożliwiający zbieranie danych z sensorów oraz wysyłanie powiadomień na podstawie ustalonych progów zakresu danych o aktulanym stanie bioreaktora.}
+\cvlistitem{Platforma NLP -- współtworzyłem webową platformę do przetwarzania języka naturalnego. Byłem odpowiedzialny za opracowanie mechanizmu realizującego tłumaczenie maszynowe. Wytrenowałem własny statystyczny model oparty o IBM Model 1, oraz dokonałem porównania działania modelu z innymi dużymi modelami językowymi (LLM).}
+% \cvlistitem{Wizualizator działania sieci neurnowych -- współtworzyłem program wykorzystując silnik Unreal Engine 5 wizualizujący sposób działania sieci neuronowych poprzez wizualizację interakcji neuronów pomiędzy warstwami.}
+\cvlistitem{System precyzyjnego sterowania pompą w układach mikrofluidycznych -- współtworzyłem system sterowania pompą strzykawkową wysokiej precyzji połączoną z przepływomierzem oraz kontrolerem PID, który umożliwiał precyzyjne sterowaniem przepływem. System był wzbogacony o~interfejs graficzny opracowany w języku Python z wykorzystaniem bibioteki PyQt.}
+\cvlistitem{Lyra - otwartoźródłowy Discord bot - stworzyłem bota w języku Rust, pozwalający na odtwarzanie muzyki na platformie Discord.}
+\cvlistitem{Opracowanie prototypu bezbateryjnego smart-taga wykorzystującego zasilanie z sieci komórkowych -- jako lider zespołu zajmowałem się analizą literatury oraz podziałem zadań i~organizacją w zespole projektowym.}
+\cvlistitem{Budowa klastra obliczeniowego -- opracowałem i wdrożyłem klaster obliczeniowy dla studenckiego koła naukowego wykorzystującego Proxmox oraz SLURM.}
+\cvlistitem{Self-hosting aplikacji na własnym serwerze -- od wielu lat utrzymuję własne instancje otwartoźródłowych aplikacji internetowych oraz własny serwer email. Nauczyłem się pracy z oprogramowaniem Docker, Traefik, Nginx, poznałem konfigurację DNS, aplikacji oraz systemów operacyjnych.}
+
+\section{Kursy}
+\cvlistitem{[2024] Management Skills Certification Course (Now with AI!)}
+\cvlistitem{Build a Blockchain \& Cryptocurrency | Full-Stack Edition}
+\cvlistitem{Ethereum and Solidity: The Complete Developer's Guide}
+\cvlistitem{Learn Ethical Hacking From Scratch}
+
+\section{Certyfikaty}
+\cvlistitem{MTA: Security Fundamentals - Certified 2021}
+\cvlistitem{MTA: Introduction to Programming Using JavaScript - Certified 2021}
+
+\section{Edukacja}
+\cventry{2022--2026}{Inżynierskie, Informatyka}{Politechnika Śląska}{Gliwice}{}{Dodatkowo aktywny członek Studenckiego Koła Naukowego Wirtualnego Latania vFly oraz czynnie reprezentujący uczelnię na konferencjach naukowych i wydarzeniach.}  % arguments 3 to 6 can be left empty
+\cventry{2018--2022}{Technik Informatyk}{Zespół Szkół Poligraficzno-Mechanicznych}{Katowice}{}{Aktywnie uczestniczący w życiu szkoły. Dodatkowo pomagałem przy obsłudze nagłośnienia oraz zajmowałem się szkolnym radiowęzłem.}
+
+% \section{Master thesis}
+% \cvitem{title}{\emph{Title}}
+% \cvitem{supervisors}{Supervisors}
+% \cvitem{description}{Short thesis abstract}
+
+\section{Historia zatrudnienia}
+% \subsection{Vocational}
+% \cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline{}%
+% Detailed achievements:%
+% \begin{itemize}%
+% \item Achievement 1;
+% \item Achievement 2, with sub-achievements:
+%   \begin{itemize}%
+%   \item Sub-achievement (a);
+%   \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+%     \begin{itemize}
+%     \item Sub-sub-achievement i;
+%     \item Sub-sub-achievement ii;
+%     \item Sub-sub-achievement iii;
+%     \end{itemize}
+%   \item Sub-achievement (c);
+%   \end{itemize}
+% \item Achievement 3.
+% \end{itemize}}
+% \cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
+% \subsection{Miscellaneous}
+\cventry{Maj 2021}{Praktykant}{mccom sp z o.o.}{Katowice}{}{Stworzenie serwisu sklepu internetowego w języku PHP z wykorzystaniem Syliusa i Symfony. Praca na systemie Linux z wykorzystaniem środowiska Docker Compose oraz wersjonowania przy pomocy Git. Praca w grupie.}
+
+% \section{Umiejętności}
+% \cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+% \cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+% \cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+
+% \section{Języki obce}
+% \cvitemwithcomment{Angielski}{Skill level}{Comment}
+
+% \section{Extra 1}
+% \cvlistitem{Item 1}
+% \cvlistitem{Item 2}
+% \cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+
+% \section{Extra 2}
+% \cvlistdoubleitem{Item 1}{Item 4}
+% % \cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+% \cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+% \section{References}
+% \begin{cvcolumns}
+%   \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%   \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+%   \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+% \end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+% \nocite{*}
+% \bibliographystyle{plain}
+% \bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+\section{Publikacje}
+\renewcommand*{\bibliographyhead}[1]{}
+\nocite{konferencja}
+\bibliographystyle{plain}
+\bibliography{publications}
+% \nocitebook{book1,book2}
+% \bibliographystylebook{plain}
+% \bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+% \nocitemisc{misc1,misc2,misc3}
+% \bibliographystylemisc{plain}
+% \bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\end{document}
